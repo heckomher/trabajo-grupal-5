@@ -1,14 +1,13 @@
 //se traen los datos desde el formulario
-var nombre = document.getElementById("nombre");
-var correo = document.getElementById("email");
-var mensaje = document.getElementById("mensaje");
-var boton = document.getElementById("enviar");
+var nombre = document.getElementById("nombre").value;
+var correo = document.getElementById("email").value;
+var mensaje = document.getElementById("mensaje").value;
+
 
 //Se crea evento para el botón enviar
-boton.addEventListener("click",function(){
-    if(nombre = "" ){
+document.getElementById("contacto").addEventListener("submit",function(event){
+    if(nombre == "" ){
         alert("Debe incluir un nombre válido")
-    }
-    
+    };
 }
 )
